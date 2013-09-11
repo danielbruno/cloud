@@ -1,2 +1,3 @@
-Python scripts using boto lib or Cloud players APIs.
-
+Cloud projects.
+* RPM Packages
+* Python scripts to interact with Cloud providers APIs
