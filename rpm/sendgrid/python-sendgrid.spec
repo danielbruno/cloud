@@ -20,6 +20,7 @@ SendGrid using Python.
 %prep
 %setup -qn %{tarball_name}-%{version}
 rm -fr %{tarball_name}.egg-info
+sed -i 's/\r$//' README.md
 
 %build
 %{__python2} setup.py build
