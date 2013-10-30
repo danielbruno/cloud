@@ -7,3 +7,4 @@ TO DO
 * rackspace-novaclient
 * python-pyrax
 * Rackspace python libs
+* http://download.opensuse.org/repositories/home://cabelo://libhaircapture/openSUSE_12.1/src/
