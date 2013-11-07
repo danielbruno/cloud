@@ -2,8 +2,8 @@
 
 Name:           python-proboscis
 Version:        1.2.6.0
-Release:        0%{?dist}
-Summary:        Proboscis is a Python test framework that extends Python's built-in unittest
+Release:        1%{?dist}
+Summary:        Proboscis is a Python test framework that extends Python's built-in unit test
 
 Group:          Development/Languages
 License:        ASL 2.0
@@ -15,7 +15,7 @@ BuildRequires:  python2-devel python-setuptools
 Requires:       python-nose 
 
 %description
-Proboscis is a Python test framework that extends Python’s built-in unittest
+Proboscis is a Python test framework that extends Python’s built-in unit test
 module and Nose with features from TestNG, such as:
 
 - Uses decorators instead of naming conventions.
@@ -23,10 +23,10 @@ module and Nose with features from TestNG, such as:
   as an alternative to using class fields (see the example below).
 - Allows for explicit test dependencies and skipping of dependent tests
   on failures.
-- Runs xUnit style clases if desired or needed for backwards compatability.
+- Runs xUnit style classes if desired or needed for backwards compatibility. 
 - Uses Nose if available (but doesn't require it), and works with many of
   its plugins.
-- Runs in IronPython and Jython (although if you're targetting the JVM you
+- Runs in IronPython and Jython (although if you're targeting the JVM you
   should consider using TestNG instead).
 
 
@@ -49,3 +49,6 @@ rm -rf %{buildroot}
 %doc README LICENSE
 
 %changelog
+* Tue Oct 29 2013 Daniel Bruno <dbruno@fedoraproject.org> - 1.2.6.0-1
+- First RPM release
+
