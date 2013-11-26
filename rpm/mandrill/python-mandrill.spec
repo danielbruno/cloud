@@ -9,7 +9,7 @@ Group:          Development/Languages
 License:        ASL 2.0
 URL:            https://bitbucket.org/mailchimp/mandrill-api-python/
 Source0:        https://pypi.python.org/packages/source/m/%{tarball_name}/%{tarball_name}-%{version}.tar.gz
-Source1:		LICENSE_MANDRILL
+Source1:        LICENSE_MANDRILL
 BuildArch:      noarch
 BuildRequires:  python2-devel python-setuptools
 Requires:       python-ujson python-docopt python-requests

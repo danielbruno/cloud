@@ -3,7 +3,7 @@
 Name:           python-proboscis
 Version:        1.2.6.0
 Release:        2%{?dist}
-Summary:        Proboscis is a Python test framework that extends Python's built-in unit test
+Summary:        A test framework that extends Python's built-in unit test
 
 Group:          Development/Languages
 License:        ASL 2.0
