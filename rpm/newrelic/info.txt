@@ -1,0 +1,9 @@
+https://pypi.python.org/packages/source/n/newrelic/newrelic-2.6.0.5.tar.gz
+newrelic 2.6.0.5
+newrelic-2.6.0.5.tar.gz
+
+New Relic Python Agent
+
+Python agent for the New Relic web application performance monitoring service. Check the release notes for what has changed in this version.
+
+URL: http://newrelic.com/docs/python/new-relic-for-python
