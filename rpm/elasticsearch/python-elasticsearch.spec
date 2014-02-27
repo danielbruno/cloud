@@ -2,7 +2,7 @@
 
 Name:           python-elasticsearch
 Version:        0.4.3
-Release:        2%{?dist}
+Release:        4%{?dist}
 Summary:        Client for Elasticsearch 
 
 Group:          Development/Languages
@@ -12,7 +12,7 @@ Source0:        https://pypi.python.org/packages/source/e/%{tarball_name}/%{tarb
 BuildArch:      noarch
 BuildRequires:  python2-devel python-setuptools
 Requires:       python-thrift
-Requires:       python-urllib => 3
+Requires:       python-urllib3 >= 1.7
 
 %description
 Low level client for Elasticsearch. It's goal is to provide common ground
@@ -38,7 +38,6 @@ cp README.rst README
 
 
 %install
-rm -rf %{buildroot}
 %{__python2} setup.py install -O1 --skip-build --root %{buildroot}
 
 %files
@@ -46,6 +45,12 @@ rm -rf %{buildroot}
 %doc README LICENSE
 
 %changelog
+* Thu Dec 19 2013 Daniel Bruno <dbruno@fedoraproject.org> - 0.4.3-4
+- Fix broken dependencies
+
+* Wed Dec 11 2013 Daniel Bruno <dbruno@fedoraproject.org> - 0.4.3-3
+- Standarizing the spec
+
 * Wed Dec 11 2013 Daniel Bruno <dbruno@fedoraproject.org> - 0.4.3-2
 - Fixing lib require
 
