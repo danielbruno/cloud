@@ -1,6 +1,8 @@
 #!/usr/bin/python
 
 """
+Generate Ansible inventory based on Rackspace Load Balancer.
+Daniel Bruno <danielbrunos@gmail.com>
 """
 
 from libcloud.loadbalancer.providers import get_driver as get_driver_lb
@@ -12,11 +14,11 @@ class inventory(object):
 	def __init__(self, region):
 
 		cfgfile = "inventory.cfg"
-		# configuracoes do inventario
+		# Confs
 		self.config = ConfigParser.RawConfigParser()
 		self.config.read(cfgfile)
 
-		# Auth
+		# Auth confs
 		username = self.config.get("rackspace", "username")
 		apikey = self.config.get("rackspace", "apikey")
 
