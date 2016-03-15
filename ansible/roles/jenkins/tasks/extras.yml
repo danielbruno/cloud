@@ -1,0 +1,9 @@
+---
+# Add here some additional packages
+- name: Extra packages
+  yum:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - git
+

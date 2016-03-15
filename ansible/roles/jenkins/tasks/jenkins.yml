@@ -1,0 +1,19 @@
+---
+- name: Install Jenkins
+  yum:
+    name: jenkins
+    state: latest
+  notify: jenkins-service
+
+# Allowed ports
+- name: Adjust firewall rule
+  firewalld:
+    port: "{{ item }}/tcp"
+    state: enabled
+    permanent: true
+    zone: public
+  with_items:
+    # add here more ports if needed
+    - 8080
+  notify: firewalld-service
+  when: firewall is defined and firewall == "true"

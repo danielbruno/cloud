@@ -1,0 +1,11 @@
+---
+- name: jenkins-service
+  service:
+    name: jenkins
+    state: restarted
+
+- name: firewalld-service
+  service:
+    name: firewalld
+    state: restarted
+
