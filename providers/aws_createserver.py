@@ -18,8 +18,8 @@ images = driver.list_images()
 #for image in images:
 #    print image
 
-EC2_IMAGE = "ami-21362b48"
-EC2_SIZE = "m1.medium"
+EC2_IMAGE = " "
+EC2_SIZE = " "
 
 size = [s for s in sizes if s.id == EC2_SIZE][0]
 image = [i for i in images if i.id == EC2_IMAGE][0]
