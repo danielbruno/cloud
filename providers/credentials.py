@@ -7,6 +7,9 @@ class identify(object):
             self.credentials = {"key": "", "secret": ""}
         elif self.provider == "digitalocean":
             self.credentials = {"key": "", "secret": ""}
+        else:
+            return "Invalid provider"
+
 
     def getKey(self):
         return self.credentials['key']
